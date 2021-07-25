@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>flamingo</title>
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <div class="titlebar">
+
+      <div class="controls">
+        <i class="fas fa-window-close" id="close"></i>
+        <i class="fas fa-minus-square" id="min"></i>
+        <i class="fas fa-plus-square" id="max"></i>
+      </div>
+
+      <div class="title"><p>flamingo</p></div>
+
+    </div>
+
+    <div class="wrap">
+      <div id="editor">
+        <textarea id="md-content" oninput="update()"></textarea>
+        <div id="html-content"></div>
+      </div>
+    </div>
+
+    <script src="controls.js"></script>
+    <script src="markdown.js"></script>
+
+  </body>
+</html>
