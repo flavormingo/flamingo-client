@@ -10,7 +10,8 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    titleBarStyle: "hiddenInset",
+    titleBarStyle: "hidden",
+    titlebarAppearsTransparent: "true",
     frame: "false"
 })
 
@@ -21,7 +22,7 @@ mainWindow.loadURL(url.format({
 }))
 
 mainWindow.on('closed', function () {
-    mainWindow = null
+    app.quit()
   })
 }
 

@@ -13,6 +13,7 @@ body {
 
 .title {
   height: 100%;
+  width: 100%;
   display: flex;
   text-align: center;
   -webkit-app-region: drag;
@@ -21,7 +22,7 @@ body {
 .title p {
   margin: auto;
   position: relative;
-  right: 69px;
+  right: 22px;
   font-size: 17px;
   font-family: monospace;
   font-weight: bold;
@@ -32,10 +33,12 @@ body {
 }
 
 .controls {
-  margin-left: 13px;
+  margin-right: 13px;
+  position: relative;
+  bottom: 22px;
   width: 69px;
   height: 100%;
-  float: left;
+  float: right;
   display: flex;
 }
 
@@ -49,10 +52,6 @@ body {
   justify-content: center;
   align-items: center;
   -webkit-app-region: no-drag;
-}
-
-.controls i:hover {
-  cursor: pointer;
 }
 
 .wrap {
